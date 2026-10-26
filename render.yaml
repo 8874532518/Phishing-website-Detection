@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: phishguard-api
+    runtime: python
+    rootDir: .
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.9"
+      - key: PHISHGUARD_ALLOWED_ORIGINS
+        sync: false
+      - key: VIRUSTOTAL_API_KEY
+        sync: false
+      - key: GSB_API_KEY
+        sync: false
+      - key: URLHAUS_AUTH_KEY
+        sync: false

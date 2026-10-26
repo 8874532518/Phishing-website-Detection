@@ -1,0 +1,15 @@
+pandas>=2.1.0
+scikit-learn>=1.4.0
+tldextract>=5.1.0
+fastapi>=0.115.0
+uvicorn>=0.30.0
+joblib>=1.3.0
+requests>=2.31.0
+python-dotenv>=1.0.0
+pytest>=8.0.0
+pytest-mock>=3.12.0
+httpx2>=2.16.0
+numpy>=1.26.0
+matplotlib>=3.8.0
+seaborn>=0.13.0
+# Note: ipaddress is a built-in module in Python 3.3+ — do NOT list it here
